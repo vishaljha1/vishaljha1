@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel a static website</title>
+    
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+  
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>Yolo</span>Hotel</a>
+
+      <nav class="navbar">
+        <a href="#"> <img src="./Pics/Abc.jpg" width="60" height="40" alt=""></a>
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#Packages">Packages</a>
+        <a href="#services">Service</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"> <span id="userName"></span></i>
+      
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <div class="login-form-container">
+      <i class="fas fa-check" id="form-close"><h5>Login Now</h5></i>
+
+      <form action="">
+        <h3>login</h3>
+        <input type="text" class="box" id="name" placeholder="enter your name" />
+        <input type="email" class="box" id="email" placeholder="enter your email" />
+        <input type="password" class="box" id="password" placeholder="enter your password" />
+        <input type="submit" value="Close" class="btn" on/>
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click hear</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+      </form>
+    </div>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Get 50% OFF on Hotels,Book now ...</h3>
+                <p>We provide best service </p>
+        <a href="#" class="btn">Explore more</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="./Vedeo/1.mp4"></span>
+        <span class="vid-btn" data-src="./Vedeo/2.mp4"></span>
+        <span class="vid-btn" data-src="./Vedeo/3.mp4"></span>
+        <span class="vid-btn" data-src="./Vedeo/4.mp4"></span>
+        <span class="vid-btn" data-src="./Vedeo/4.mp5"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="./Vedeo/2.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </h1>
+      <div class="row">
+        <div class="image">
+          <img
+            src="./Pics/Hotel pics/1.jpg"
+            width="2000"
+            height="1318"
+            alt=""
+          />
+          <!-- width="1600" height="800" -->
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>Address</h3>
+            <input type="text" placeholder="Your Address" />
+          </div>
+          <div class="inputBox">
+            <h3>ROOMS & GUESTS</h3>
+            <input type="number" placeholder="Number of guests & rooms" />
+          </div>
+          
+          <div class="inputBox">
+            <h3>Checkin</h3>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h3>Checkout</h3>
+            <input type="date" />
+          </div>
+          <input type="submit" class="btn" value="book now" />
+        </form>
+      </div>
+    </section>
+
+
+    <section class="Packages" id="Packages">
+      <h1 class="heading">
+        <span>BOOKING</span>
+        <span>ROOMS</span>
+        <span>STARTS</span>
+        <span>FROM</span>
+        <span class="space"></span>
+        <span>AT</span>
+        <span class="space"></span>
+        <span>MINIMUM</span>
+        <span>PRICE</span>
+        <span>RANGE</span>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="./Pics/Reception pic/1.jpg"
+            height="300"
+            width="400"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Suite</h3>
+            <p>
+              Suite: A single room with a bed and sitting area. Sometimes the
+              sleeping area is in a bedroom separate from the parlour or living!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$90.00<span>$120.00</span></div>
+            <a href="#" class="btn"> Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="./Pics/Reception pic/2.jpg"
+            height="300"
+            width="400"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Studio apartment</h3>
+            <p>
+              The term studio apartment room refers to a studio apartment in a
+              hotel. Typically found in extended-stay hotels, you can find
+              studios with a bedroom!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$90.00<span>$120.00</span></div>
+            <a href="#" class="btn"> Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./Pics/Room pic/7.jpg" height="300" width="400" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>presidential suite</h3>
+            <p>
+              The presidential suite is a super, luxurious hotel room. It is
+              designed to accommodate powerful or wealthy individuals visiting a
+              place.!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$120.00<span>$135.00</span></div>
+            <a href="#" class="btn"> Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./Pics/Room pic/2.jpg" height="300" width="400" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Capsule hotels</h3>
+            <p>
+              Capsule hotels are a type of economical hotel first introduced in
+              Japan, where people sleep in stacks of rectangular containers. In
+              the sleeping capsules, ...!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <div class="price">$110.00<span>$180.00</span></div>
+              <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="btn"> Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="./Pics/Reception pic/6.png"
+            height="300"
+            width="400"
+            alt=""
+          />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Boutique hotels</h3>
+            <p>
+              Boutique hotels are typically much smaller than the average chain
+              hotel. Usually made up of 100 guest rooms or fewer, you can expect
+              to find boutique hotels ...!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$140.00<span>$600.00</span></div>
+            <a href="#" class="btn"> Book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./Pics/Hotel pics/6.jpg " height="300" width="400" alt="" />
+
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Executive Room</h3>
+            <p>
+              Executive Room- Luxury Room / Deluxe Room; Standard Suite; Luxury
+              Suite; Presidential Suite; Studio; Villas ..!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$450.00<span>$640.00</span></div>
+            <a href="#" class="btn"> Book now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>offordable Hotel rooms avalable</h3>
+          <p>
+            Modern and Comfortable Rooms. Quality hotel rooms are stylish, and
+            designed to help you relax and refresh, with premium bedding and
+            modern furnishings
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>Food and Drinks</h3>
+          <p>
+            The hotel is responsible for providing guests with all their
+            expected amenities. These include appetizing food, meals at an
+            affordable price, and professional
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>safety duide</h3>
+          <p>
+            Don't hand out room keys without someone providing ID. Do not give
+            out guest information. Make sure prohibited areas
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-plane"></i>
+          <h3>Tour & excursions</h3>
+          <p>
+            With our partner Tours & Tickets, you can choose and book your tours
+            and excursions in advance. There's a variety to choose from; whether
+            you want to explore ...
+          </p>
+          <!-- <p>Find our collection of the finest independent hotels in over 200 iconic destinations around the world. Find inspiration in some of our favorite locations.</p> -->
+        </div>
+        <div class="box">
+          <i class="fas fa-mobile"></i>
+          <h3>online booking service available</h3>
+          <p>
+            Now Book Domestic & International Hotels at Yatra.com. Travelers can
+            book cheap, budget,luxury Chain hotels at great prices with the best
+            discount ever...!
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-fan"></i>
+          <h3>Laundry service</h3>
+          <p>
+            Laundry services are usually provided by full-service and include
+            cleaning, drying, ironing, and folding your garments. Some may also
+            provide ...
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-wifi"></i>
+          <h3>Free wireless internet access</h3>
+          <p>We provide you unlimited free Internet access !</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-sun"></i>
+          <h3>24-Hour room service</h3>
+          <p>We provide 24-Hour room service !</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>Y</span>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <!-- <img src="./Pics/Room pic/11.jpeg"alt=""> -->
+          <img src="./Pics/Room pic/11.jpeg" width="350" height="" alt="" />
+          <div class="content">
+            <h3>Swimming pool</h3>
+            <p>
+              The swimming pool in the hotel is a place for fun, relaxation, and
+           entertainment for guests. Swimming can be enjoyed by both adults and children.
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img
+            src="./Pics/Hotel pics/8.png"
+            width="350"
+            height=""
+            alt=""
+            alt=""
+          />
+          <div class="content">
+            <h3>quiet room</h3>
+            <p>
+              According to an expert, you should always make sure you ask for a corner
+             room if you want peace. 'Due to the structural layout of a building, ...
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./Pics/Hotel pics/7.png" width="320" height="230" alt="" />
+          <div class="content">
+            <h3>Amazing places</h3>
+            <p>
+              Super-luxury hotels are being built in outer space. The new type
+              of haven is being offered to humans
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./Pics/Hotel pics/9.jpg" width="300" height="250" alt="" />
+          <div class="content">
+            <h3> Conference center hotels</h3>
+            <p>
+              Conference or convention center hotels are characterized by their combination of guest rooms and meeting space.
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./Pics/Hotel pics/10.jpg" width="300" height="250" alt="" />
+          <div class="content">
+            <h3>Levels Of service</h3>
+            <p>
+              they target top business executives, entertainment celebrities, high-ranking
+               political figures, and wealthy clientele as their primary markets.
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./Pics/Hotel pics/11.jpg" width="300" height="250" alt="" />
+          <div class="content">
+            <h3>Motel</h3>
+            <p>
+              Motels have enjoyed an increase in their business in recent years as the increase in private car
+              owners has materialised.
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./Pics/Hotel pics/12.jpg" width="300" height="250" alt="" />
+          <div class="content">
+            <h3>Extended stay hotels</h3>
+            <p>
+              While many lodging options cater to overnight or short-term stays, some properties specialize
+               in accommodating travelers looking for an extended stay.
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./Pics/Hotel pics/13.jpg" width="300" height="250" alt="" />
+          <div class="content">
+            <h3>Eco hotels</h3>
+            <p>
+              An eco hotel — also commonly referred to as a green hotel or sustainable hotel — is a type of hotel that 
+              puts a lot of focus on operating in an environmentally-friendly and sustainable manner.
+            </p>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>
+      </h1>
+
+      <div class="swiper-container review-slider">
+      <!-- <div class="'review-slider"> -->
+        <!-- <div class="swiper-wrapper"> -->
+        <div class="wrapper">
+          <div class="slider">
+            <div class="box">
+              <img src="./Pics/Hotel visitor review/12.jpg" />
+              <h3>Aman Gupta</h3>
+              <p>
+                Nice hotel, great staff service, very friendly and helpful ! Great location and very
+                 close from the train station!!, Very well located, Yes Hotel is a little gem a 5-minute
+                  walk from Termini station. The rooms have A/C and are clean
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>   
+                <div class="'review-slider">
+        <div class="wrapper">
+            <div class="slider">
+                <div class="box">
+                    <img src="./Pics/Hotel visitor review/6.jpg">
+                    <h3> rahul rawal</h3>
+                    <p> Great location, beautiful surrounding atmosphere, great staff.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i> </div>   </div>  </div>  </div>   </div>
+
+      <div class="'review-slider">
+        <div class="wrapper">
+          <div class="slider">
+            <div class="box">
+              <img src="./Pics/Hotel visitor review/8.jpg" />
+              <h3>shristi</h3>
+              <p>
+                Very good place for stay and food on the bad. Hotel room service in very good they are very polite to customers.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>   </div>   </div>  </div>  </div>   </div>
+
+      <div class="'review-slider">
+        <div class="wrapper">
+          <div class="slider">
+            <div class="box">
+              <img src="./Pics/Hotel visitor review/7.jpg" />
+              <h3>abhishek</h3>
+              <p>
+                Tha best 👌 location rooms and food is good Staf is good person..
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>    </div>   </div>  </div>  </div>   </div>
+        
+      <div class="'review-slider">
+        <div class="wrapper">
+          <div class="slider">
+            <div class="box">
+              <img src="./Pics/Hotel visitor review/10.jpg" />
+              <h3>palak kout</h3>
+              <p>
+                Business
+I really want to give my Feedback for this Hotel Genuinely.
+1 Receptionist told me in Morning that he is giving me room @1000 per night
+ and breakfast included but when I was doing check out he charged me 12000 + Breakfast Charges.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>  </div>   </div>  </div>  </div>   </div>
+              
+    </section>
+
+<section class="contact" id="contact">
+
+  <h1 class="heading">
+    <span>C</span>
+    <span>O</span>
+    <span>N</span>
+    <span>T</span>
+    <span>A</span>
+    <span>C</span>
+    <span>T</span>
+  </h1>
+  
+  <div class="row">
+<div class="image">
+  <img src="./Pics/Screenshot 2023-09-13 082258.jpg" width="" height="300" alt="">
+</div>
+
+  <form action="">
+    <div class="inputBox">
+    <input type="text" placeholder="name">
+    <input type="email" placeholder="email">
+  </div>
+
+  <div class="inputBox">
+    <input type="number" placeholder="number">
+    <input type="text" placeholder="subject">
+  </div>
+
+<textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea> 
+<input type="submit" class="btn" value="send message">
+  </form>
+  </div>
+
+</section>
+
+<section class="footer">
+  <div class="box-container">
+
+    <div class="box">
+<h3>about us</h3>
+<p> One of the best hotel Service we provides</p>
+</div>
+          <div class="box">
+            <h3>Branch locations (India)</h3>
+            <a href="http://sikkim.org/">Sikkim</a>  
+            <a href="http://www.kolkata.org.uk">Kolkata</a>            
+            <a href="http://Lucknow.org/">Lucknow</a>            
+            <a href="https://www.bhubaneswar.me">Bhubaneswar</a>            
+          </div>
+
+          <div class="box">
+            <h3>quick Link</h3>
+            <a href="#">home</a>  
+            <!-- <a href="#">book</a>             -->
+            <!-- <a href="#">packages</a>             -->
+            <!-- <a href="#">services</a>    -->
+            <a href="#">gallery</a>            
+            <a href="#">review</a>  
+            <a href="#">contact</a>            
+           </div>
+
+           <div class="box">
+            <h3>quick Link</h3>
+            <a href="https://www.facebook.com/login/">facebook</a>  
+            <a href="https://www.instagram.com/">instagram</a>            
+            <a href="https://twitter.com/">twitter</a>            
+            <a href="https://linkedin.com/">linkedin</a>               
+           </div>
+  </div>
+  <!-- <img src="./Pics/Purple Wallpapers and Backgrounds 2022_Amazon_com_Appstore for Android.jpg"
+     width="400" height="10" alt=""> </br> -->
+
+<h1 class="credit"> own by..<span> YOLO Hotel</span> | all right reserved!</h1>
+
+</section>
+
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <!-- custom js file link -->
+    <script src="./script.js"></script>
+  </body>
+</html>
